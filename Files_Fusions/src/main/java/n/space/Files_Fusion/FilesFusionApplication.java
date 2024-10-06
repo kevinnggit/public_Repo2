@@ -1,17 +1,51 @@
 package n.space.Files_Fusion;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import n.space.Files_Fusion.space.nevik.files.Read_files;
 
 @SpringBootApplication
 public class FilesFusionApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		SpringApplication.run(FilesFusionApplication.class, args);
-		Read_files lese = new Read_files();
-		System.out.println(lese);
+
+		Empfang empfang = new Empfang();
+		ArrayList<String> pfad = new ArrayList<String>();
+		pfad = empfang.verification();
+		//Read_files lese = new Read_files();
+		//System.out.println(lese);
+
+		/*System.out.println("Name der Datei 1 eingeben");
+        String dat1 = sc.nextLine();
+		fileNames.add(dat1);
+
+		System.out.println("Name der Datei 2 eingeben");
+        String dat2 = sc.nextLine();
+		fileNames.add(dat2);*/
+
+        //Empfang empfang = new Empfang();
+		//List<String> namen = empfang.verification();
+		// System.out.println("Pfad eingeben");
+		// Scanner sb = new Scanner(System.in);
+		// String route = sb.nextLine();
+
+        // File file = new File(route);
+
+		// File line;
+		// Scanner sc = new Scanner(file);
+
+		// while (sc.hasNextLine()) {
+		// 	String data = sc.nextLine();
+		// 	System.out.println(data);
+		// }
+		// System.out.println("End of reading file");
 	}
 
 }
