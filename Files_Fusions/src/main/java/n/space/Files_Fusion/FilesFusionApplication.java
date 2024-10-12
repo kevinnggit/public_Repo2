@@ -1,8 +1,8 @@
 package n.space.Files_Fusion;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,12 +13,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class FilesFusionApplication {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws IOException {
 		SpringApplication.run(FilesFusionApplication.class, args);
 
 		Empfang empfang = new Empfang();
-		ArrayList<String> pfad = new ArrayList<String>();
+		List<String> pfad = new ArrayList<String>();
 		pfad = empfang.verification();
+
+		DateiExist dateiExist = new DateiExist();
+		dateiExist.exist(pfad);
+		dateiExist.lesen();
 		//Read_files lese = new Read_files();
 		//System.out.println(lese);
 

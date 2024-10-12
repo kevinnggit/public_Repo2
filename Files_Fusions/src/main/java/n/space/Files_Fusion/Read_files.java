@@ -1,12 +1,4 @@
 package n.space.Files_Fusion;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
-import javax.sound.sampled.SourceDataLine;
-
-import ch.qos.logback.core.net.SyslogOutputStream;
-
 import java.io.File;
 
 public class Read_files {
@@ -24,7 +16,7 @@ public class Read_files {
 
     public void lesen1 (String name1, String name2) {
         File doc1 = new File("C:/Users/kevin/Desktop/file1.txt");
-        File doc2 = new File("C:/Users/kevin/Desktop/file2.txt");
+        File doc2 = new File("C:/Users/kevin/Desktop/file1.txt");
 
 
     }

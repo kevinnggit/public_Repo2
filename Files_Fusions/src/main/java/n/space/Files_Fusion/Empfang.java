@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 public class Empfang {
 
-	public static ArrayList<String> verification() {
+	public List<String> verification() {
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList<String> fileNames = new ArrayList<String>();
+		List<String> fileNames = new ArrayList<String>();
 
 		for (int i = 0; i < 2; i++) {
 			System.out.println("Name der Datei " + i + " eingeben");
@@ -18,7 +18,7 @@ public class Empfang {
 			fileNames.add(datei);
 		}
 		sc.close();
-		System.out.println("file1 : " + fileNames.get(1));
+		//System.out.println("file1 : " + fileNames.get(1));
 		return fileNames;
 	}
 }

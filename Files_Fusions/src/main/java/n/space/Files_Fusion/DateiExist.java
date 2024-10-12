@@ -5,12 +5,13 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+import java.util.ArrayList;
 
 public class DateiExist {
 
-    protected List<File> files; // initialisiere eine neue Liate
+    protected List<File> files = new ArrayList<>(); // initialisiere eine neue Liste
 
-    public List<File> Exist(List<String> namesF) {
+    public List<File> exist(List<String> namesF) {
         for (int i = 0; i < namesF.size(); i++) {
             File file = new File(namesF.get(i)); // Holt sich die entsprechende Daei
             if (!file.exists() || !file.canRead()) {
