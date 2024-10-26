@@ -12,12 +12,12 @@ public class Empfang {
 		Scanner sc = new Scanner(System.in);
 		List<String> fileNames = new ArrayList<String>();
 
-		for (int i = 0; i < 2; i++) {
+		for (int i = 1; i <= 2; i++) {
 			System.out.println("Name der Datei " + i + " eingeben");
 			String datei = sc.nextLine();
 			fileNames.add(datei);
 		}
-		sc.close();
+		//sc.close();
 		//System.out.println("file1 : " + fileNames.get(1));
 		return fileNames;
 	}
